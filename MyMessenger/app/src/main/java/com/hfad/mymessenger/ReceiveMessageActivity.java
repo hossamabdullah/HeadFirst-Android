@@ -14,6 +14,9 @@ public class ReceiveMessageActivity extends Activity {
         setContentView(R.layout.activity_receive_message);
         Intent intent = getIntent();
         String message = intent.getStringExtra(EXTRA_MESSAGE);
+        System.out.println("================================================");
+        System.out.println(message);
+        System.out.println("================================================");
         TextView messageView = (TextView)findViewById(R.id.message);
         messageView.setText(message);
     }
